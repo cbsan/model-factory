@@ -1,5 +1,17 @@
-# modelFactory
+# Model Factory
 Factory mapping model DB - Uses DoctrineDBAL
+
+## Install via Composer
+
+```
+composer.json
+{
+    "require": {
+       "cbsantos/model-factory": "dev-master",
+       "doctrine/dbal": "dev-master"
+    }
+}
+```
 
 ## Create Connection DataBase:
 
