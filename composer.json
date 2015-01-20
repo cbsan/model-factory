@@ -1,0 +1,22 @@
+{
+	"name": "cbsantos/model-factory",
+	"description"  : "Model Factory using DoctrineDBAL",
+	"keywords": ["DoctrineDBAL", "factory", "model"],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Cristian B. Santos",
+			"email": "cristian.deveng@gmail.com"
+		}
+	],
+
+	"require":{
+		"php": ">=5.3.2",
+		"doctrine/dbal" : "dev-master"
+	},
+	"autoload":{
+		"psr-4": {
+			"CBSantos\\ModelFactory\\": "src/"
+		}
+	}
+}
