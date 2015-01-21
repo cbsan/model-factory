@@ -22,8 +22,8 @@ abstract class ModelProvider extends QueryBuilder implements  QuerySerializeInte
 	protected $primaryKey;
 	protected $attributes;
 	protected $rawAttributes;
-	protected $firstResult;
-	protected $maxResults;
+	protected $firstResult = 0;
+	protected $maxResults = 100;
 
     public function __construct()
     {
