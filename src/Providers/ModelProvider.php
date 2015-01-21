@@ -71,6 +71,15 @@ abstract class ModelProvider extends QueryBuilder implements  QuerySerializeInte
     {
         return (object)$this->rawAttributes;
     }
+    
+    /**
+     * Serialized model in Array all
+     * @return array 
+     */
+    public function toList()
+    {
+        return $this->Get()->toArray();
+    }
 
     public function hasMany($model, $key, $foreignKey)
     {
