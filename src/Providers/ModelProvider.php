@@ -44,6 +44,11 @@ abstract class ModelProvider extends QueryBuilder implements  QuerySerializeInte
 
         return $this->$atrib;
     }
+    
+    public function __isset($name)
+    {
+        return in_array($name, $this->fieldsLabels);
+    }
 
     /**
      * Serialized model in Json 
