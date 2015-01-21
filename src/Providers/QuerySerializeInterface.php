@@ -14,4 +14,5 @@ interface QuerySerializeInterface
 {
 	public function toJson();
 	public function toArray();
+	public function toList();
 }
