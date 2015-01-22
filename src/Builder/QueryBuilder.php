@@ -198,7 +198,7 @@ abstract class QueryBuilder extends QueryContains implements QueryBuilderInterfa
         */
         $defaultModel = $this::Query()->execute()->fetch();
 
-        $this->fieldsLabels  = array_keys($defaultModel);
+        $this->fieldsLabels  = !empty($defaultModel) ? array_keys($defaultModel) : array();
         
         return $this;
     }
